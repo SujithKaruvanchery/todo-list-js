@@ -10,10 +10,6 @@ function addTask() {
     li.className = "todo-item";
     li.textContent = text;
 
-    // taskList.appendChild(li);
-
-    // console.log(taskList);
-
     let editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
     editBtn.className = "edit-btn";
@@ -26,12 +22,21 @@ function addTask() {
         }
     };
 
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.className = "delete-btn";
+
+    deleteBtn.onclick = function () {
+        li.remove();
+    }
+
     li.appendChild(editBtn);
+
+    li.appendChild(deleteBtn);
 
     taskList.appendChild(li);
 
     console.log(taskList);
-
 
 }
 
