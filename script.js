@@ -9,6 +9,7 @@ function addTask() {
     let li = document.createElement("li");
     li.className = "todo-item";
     li.textContent = text;
+    taskInput.value = "";
 
     let editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
@@ -27,7 +28,10 @@ function addTask() {
     deleteBtn.className = "delete-btn";
 
     deleteBtn.onclick = function () {
-        li.remove();
+        let confirmDelete = confirm("Are you sure you want to delete this task?");
+        if (confirmDelete) {
+            li.remove();
+        }
     }
 
     li.appendChild(editBtn);
