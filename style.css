@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todo-container {
+    text-align: center;
+}
+
+.todo-input {
+    width: 300px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.enter-date input {
+    width: 300px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.clear-btn {
+    width: 250px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.enter-task {
+    padding: 10px;
+}
+
+.enter-date {
+    padding: 10px;
+}
+
+.add-task-btn {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.add-task-btn button {
+    width: 250px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.todo-list{
+    padding: 10px;
+}
+
+.edit-btn{
+    width: 100px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.delete-btn{
+    width: 100px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid;
+}
